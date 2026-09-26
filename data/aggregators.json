@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "note": "内置聚合器表。field=false 表示这个聚合器不看字段，只数事件；coerce 说明取值前要做什么检查。",
+  "aggregators": [
+    { "id": "count",   "label": "计数",   "field": false, "coerce": "none"   },
+    { "id": "sum",     "label": "求和",   "field": true,  "coerce": "number" },
+    { "id": "min",     "label": "最小值", "field": true,  "coerce": "number" },
+    { "id": "max",     "label": "最大值", "field": true,  "coerce": "number" },
+    { "id": "avg",     "label": "平均值", "field": true,  "coerce": "number" },
+    { "id": "collect", "label": "收集",   "field": true,  "coerce": "any"    }
+  ]
+}
